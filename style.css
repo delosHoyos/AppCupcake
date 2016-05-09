@@ -1,0 +1,118 @@
+/* CSS Document */
+body{
+	font-family:'Roboto', sans-serif;
+}
+
+.login {
+	background-color:#EF475A;
+}
+
+#logoBack {
+	width:80%;
+	height:80%;
+	margin-left:30px;
+}
+
+.logoBackLit {
+	width:60%;
+	height:60%;
+	margin-left:80px;
+}
+
+.NoSombra{
+	text-shadow:none;
+	color:#E1E1E1;
+	font-family: 'Roboto', sans-serif;
+	text-align:center;
+	padding-top:10px;
+}
+
+
+
+.menuSup {
+	margin-top: 50px;
+	background-color:#EF475A;
+	border-bottom:1px solid #000;
+}
+
+.headerHome {
+	height:75px;
+	background-color:#EF475A;
+}
+
+.contenido {
+	background-color:#E1E1E1;
+}
+
+
+
+
+#col1, #col2{
+	background-color:#E1E1E1;
+	text-shadow:none;
+	border:1px solid #ccc;
+	padding:0;
+	margin-right:4px;	
+}
+
+.imgCol {
+	width:100%;
+}
+
+.products h4 {
+	color:#000;
+	text-transform:uppercase;
+	margin-left:5px;
+	font-size:12px;
+}
+
+.products p{
+	color:#000;
+	margin-left:5px;
+	font-size:10px;
+	font-weight:100;
+	margin-bottom:10px;
+}
+
+.products {
+	margin-top:4px;
+	border-bottom:1px solid #ccc;
+	background-color:#FFF;
+}
+
+#product1, #product2{
+	margin-top:0;
+}
+
+#product1_Compras, #product2_Compras{
+	margin-top:0;
+}
+
+#precioTotal {
+	background-color:#fff;
+	text-shadow:none;
+	color:#000;
+	text-align:center;
+	padding:5px 0;
+}
+
+#carrito{
+	color:#CD6D80;
+}
+
+.contenidoRosa{
+	background-color:#EF475A;
+}
+
+#precioFinal {
+	background-color:#fff;
+	text-shadow:none;
+	color:#000;
+	text-align:center;
+	padding:5px 0;
+	margin-top:200px;
+}
+
+#grupoFinal {
+	margin-top:50px;
+}

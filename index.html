@@ -1,0 +1,265 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>App Cupcakes</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" href="themes/rosa.min.css" />
+<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+
+<link rel="stylesheet" href="jquery.mobile-1.4.5.css">
+
+<script src="jquery-1.12.2.min.js"></script>
+<script src="jquery.mobile-1.4.5.min.js"></script>
+<link rel="stylesheet" href="style.css">
+
+<!--<script>
+/*$(document).ready(function(){
+	
+	 $("#traer").click(function(){ //comentar esto para que lo traiga sin tener que tocar ningun boton
+        $.getJSON("http://localhost/app/listaItems.php", function(resultados){
+			for(var l=0; l<resultados.length; l++){
+				
+            	$.each(resultados[l], function(i, campo){
+               	 $("#listadoIngre").append(campo+ "</br>");
+           		 });
+			}
+        });
+    }); //comentar tambien esto
+	
+	$("#borrar").click(function(){
+      $("#listadoIngre").empty();
+    });
+});*/
+</script>-->
+</head>
+
+<body>
+
+<div id="login" data-role="page">
+        <div data-role="content" class="login">
+            <img src="images/logo.png" alt="logo" id="logoBack">
+            <a href="#ingresar" data-transition="flow" class="ui-btn ui-btn-c ui-shadow">INGRESAR</a>
+            <a href="#registrarse" data-transition="flow" class="ui-btn ui-btn-c ui-shadow">REGISTRARSE</a>
+        </div>
+</div>
+
+<div id="ingresar" data-role="page">
+        <div data-role="content" class="login">
+                <label for="text-basic" class="NoSombra">USUARIO</label>
+                <input name="text-basic" id="text-basic" value="" type="text">
+        
+                <label for="text-basic" class="NoSombra">CONTRASEÑA</label>
+                <input name="text-basic" id="text-basic" value="" type="text">
+                
+                <img src="images/logo.png" alt="logo" class="logoBackLit">
+                <a href="#home" data-transition="flow" class="ui-btn ui-btn-c ui-shadow">INGRESAR</a>
+            </div>
+</div>
+
+<div id="registrarse" data-role="page">
+    	<div data-role="content" class="login">
+            <label for="text-basic" class="NoSombra">USUARIO</label>
+            <input name="text-basic" id="text-basic" value="" type="text">
+          
+            <label for="text-basic" class="NoSombra">MAIL</label>
+            <input name="text-basic" id="text-basic" value="" type="text">
+           
+            <label for="text-basic" class="NoSombra">CONTRASEÑA</label>
+            <input name="text-basic" id="text-basic" value="" type="text">
+            
+            <img src="images/logo.png" alt="logo" class="logoBackLit">  
+            <a href="#home" data-transition="flow" class="ui-btn ui-btn-c ui-shadow">REGISTRARSE</a>
+     	</div>
+</div>
+
+<div id="home" data-role="page">
+
+        <div data-role="panel" id="panel_productos" data-display="overlay">
+            <ul>
+                <li>Cumpleaños</li>
+                <li>Personajes</li>
+                <li>Infantiles</li>
+                <li>Flores</li>
+                <li>Festividades</li>
+                <li>Animales</li>
+            </ul>
+        </div>
+        
+        <div data-role="panel" id="panel_especiales" data-position="right" data-display="overlay">
+           <ul>
+                <li>Especial del día</li>
+                <li>Favorios de la gente</li>
+                <li>Deportivos</li>
+                <li>Musicales</li>
+                <li>Rellenos</li>
+                <li>Extravagantes</li>
+            </ul>
+        </div> 
+
+    <div data-role="header" class="headerHome">
+    	<div data-role="controlgroup" data-type="horizontal" class="ui-mini ui-btn-right">
+            <a href="#" class="ui-btn ui-corner-all ui-icon-bullets ui-btn-icon-notext">menu</a>
+            <a href="#" class="ui-btn ui-corner-all ui-icon-search ui-btn-icon-notext">lupa</a>
+            <a href="#" class="ui-btn ui-corner-all ui-icon-location ui-btn-icon-notext">lugar</a>
+        </div>
+           
+        <div data-role="navbar" class="menuSup">
+            <ul>
+               <li><a href="#panel_productos" class="ui-btn-c">PRODUCTOS</a></li>
+               <li><a href="#panel_especiales" class="ui-btn-c">ESPECIALES</a></li>
+               <li><a href="#" class="ui-btn-c">CREAR</a></li>
+           </ul>
+        </div>
+        
+    </div>
+    
+    <div data-role="content" class="contenido">
+    
+        <div class="ui-grid-a"><!-- /grids -->
+        
+            <div class="ui-block-a"><div class="ui-bar ui-bar-a" id="col1">
+            
+            	<div class="products" id="product1">
+                    <img src="images/cups/chococafe.jpg" class="imgCol">
+                    <h4>Chococafé</h4>
+                    <p>Bizcocho de chocolate, café con crema al café y figura al chocolate.</p>
+                    <a href="#compras" data-transition="flow" class="ui-btn ui-btn-c ui-shadow">Comprar</a>
+            	</div>
+                
+                <div class="products" id="product3">
+                    <img src="images/cups/redvelvet.jpg" class="imgCol">
+                    <h4>Red Velvet</h4>
+                    <p>Bizcocho de vainilla rojo aterciopelado con creamcheese y coco rallado.</p>
+                    <a href="#compras" data-transition="flow" class="ui-btn ui-btn-c ui-shadow">Comprar</a>
+            	</div>
+                
+            </div></div>
+            
+            <div class="ui-block-b"><div class="ui-bar ui-bar-a" id="col2">
+            
+                <div class="products" id="produc2">
+                    <img src="images/cups/arandano.jpg" class="imgCol">
+                    <h4>Arándano</h4>
+                    <p>Bizcocho de chocalate con arándanos y buttercream.</p>
+                    <a href="#compras" data-transition="flow" class="ui-btn ui-btn-c ui-shadow">Comprar</a>
+            	</div>
+                
+                <div class="products" id="product4">
+                    <img src="images/cups/applecrumble.jpg" class="imgCol">
+                    <h4>Apple Crumble</h4>
+                    <p>Bizcocho de vainilla con trozos de manzana, canela y crumble con nuez.</p>
+                    <a href="#compras" data-transition="flow" class="ui-btn ui-btn-c ui-shadow">Comprar</a>
+            	</div>
+                
+            </div></div>
+            
+        </div><!-- /grids -->
+  
+    </div>
+    
+</div>
+
+   		<!-- 
+   		
+            <div id="listadoIngre"></div>
+            <button id="borrar">Borrar</button>
+            <button id="traer">Recuperar</button>
+            
+        -->
+
+<div id="compras" data-role="page">
+
+        <div data-role="panel" id="panel_productos" data-display="overlay">
+            <ul>
+                <li>Cumpleaños</li>
+                <li>Personajes</li>
+                <li>Infantiles</li>
+                <li>Flores</li>
+                <li>Festividades</li>
+                <li>Animales</li>
+            </ul>
+        </div>
+        
+        <div data-role="panel" id="panel_especiales" data-position="right" data-display="overlay">
+           <ul>
+                <li>Especial del día</li>
+                <li>Favorios de la gente</li>
+                <li>Deportivos</li>
+                <li>Musicales</li>
+                <li>Rellenos</li>
+                <li>Extravagantes</li>
+            </ul>
+        </div> 
+
+    <div data-role="header" class="headerHome">
+    	<div data-role="controlgroup" data-type="horizontal" class="ui-mini ui-btn-right">
+            <a href="#" class="ui-btn ui-corner-all ui-icon-bullets ui-btn-icon-notext">menu</a>
+            <a href="#" class="ui-btn ui-corner-all ui-icon-search ui-btn-icon-notext">lupa</a>
+            <a href="#" class="ui-btn ui-corner-all ui-icon-location ui-btn-icon-notext">lugar</a>
+        </div>
+           
+        <div data-role="navbar" class="menuSup">
+            <ul>
+               <li><a href="#panel_productos" class="ui-btn-c">PRODUCTOS</a></li>
+               <li><a href="#panel_especiales" class="ui-btn-c">ESPECIALES</a></li>
+               <li><a href="#" class="ui-btn-c">CREAR</a></li>
+           </ul>
+        </div>
+        
+    </div>
+
+	<div data-role="content" class="contenido">
+      
+      <p id="carrito">CARRITO DE COMPRAS</p>
+      
+       <div class="ui-grid-a"><!-- /grids -->
+        
+            <div class="ui-block-a"><div class="ui-bar ui-bar-a" id="col1">
+            
+            	<div class="products" id="product1_Compras">
+                    <img src="images/cups/chococafe.jpg" class="imgCol">
+                    <h4>Chococafé</h4>
+                    <p>Bizcocho de chocolate, café con crema al café y figura al chocolate.</p>
+
+            	</div>
+
+            </div></div>
+            
+            <div class="ui-block-b"><div class="ui-bar ui-bar-a" id="col2">
+            
+                <div class="products" id="product2_Compras">
+                    <img src="images/cups/applecrumble.jpg" class="imgCol">
+                    <h4>Apple Crumble</h4>
+                    <p>Bizcocho de vainilla con trozos de manzana, canela y crumble con nuez.</p>
+            	</div>
+  
+            </div></div>
+            
+        </div><!-- /grids -->
+      
+      <p id="precioTotal">TOTAL $10</p>
+      
+      <a href="#metodo_pago" data-transition="flow" class="ui-btn ui-btn-c ui-shadow">COMPRAR</a>
+      
+	  </div>
+	
+</div>
+
+<div id="metodo_pago" data-role="page">
+
+	  <div data-role="content" class="contenidoRosa">
+      <div id="grupoFinal">
+        <a href="#home" data-transition="flow" class="ui-btn ui-btn-c ui-shadow">PAGAR CON TRAJETA</a>
+        <a href="#home" data-transition="flow" class="ui-btn ui-btn-c ui-shadow">PAGAR EN EFECTIVO</a>
+        <a href="#home" data-transition="flow" class="ui-btn ui-btn-c ui-shadow">CAMBIAR DIRECCIÓN</a>
+	  </div>
+      
+		<p id="precioFinal">TOTAL $10</p>
+	  </div>
+</div>
+
+</body>
+</html>
